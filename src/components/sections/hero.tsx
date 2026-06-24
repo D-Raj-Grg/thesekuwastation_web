@@ -53,11 +53,13 @@ export function Hero() {
       {/* Ember particles */}
       <Particles
         className="absolute inset-0"
-        quantity={70}
+        quantity={80}
         color="#e0651a"
-        size={0.6}
+        size={0.7}
         staticity={40}
         ease={60}
+        vx={0.12}
+        vy={-0.55}
       />
 
       {/* Content */}
