@@ -10,7 +10,7 @@ export function Visit() {
     <Section id="visit">
       <SectionHeading eyebrow="Find Us" title="Visit the Station" subtitle="Drop by, call ahead, or get directions to the grill." />
 
-      <div className="mt-12 grid gap-6 lg:grid-cols-2">
+      <div className="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-2">
         {/* Map (lazy-mounted to avoid load-time scroll jump) */}
         <BlurFade inView direction="right">
           <MapEmbed />

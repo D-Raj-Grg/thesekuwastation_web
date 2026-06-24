@@ -10,7 +10,7 @@ import { site } from "@/lib/site-config";
 export function SekuwaPricing() {
   return (
     <Section className="border-y border-line/50">
-      <div className="grid items-center gap-10 lg:grid-cols-2">
+      <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2">
         <BlurFade inView direction="right">
           <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl border border-line sm:aspect-[3/2] lg:aspect-[4/5]">
             <Image

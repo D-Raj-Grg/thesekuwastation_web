@@ -22,8 +22,8 @@ const STATS = [
 export function Story() {
   return (
     <Section id="story" spark>
-      <div className="grid items-center gap-10 lg:grid-cols-2">
-        <div className="flex flex-col gap-6">
+      <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2">
+        <div className="flex min-w-0 flex-col gap-6">
           <SectionHeading
             align="left"
             eyebrow="Our Story"
@@ -56,8 +56,8 @@ export function Story() {
           </BlurFade>
         </div>
 
-        <BlurFade inView direction="left">
-          <div className="relative">
+        <BlurFade inView direction="left" className="min-w-0">
+          <div className="relative overflow-hidden">
             <Marquee pauseOnHover className="[--duration:30s]">
               {GALLERY.map((src) => (
                 <div key={src} className="relative h-44 w-36 shrink-0 overflow-hidden rounded-xl border border-line sm:h-56 sm:w-44">
