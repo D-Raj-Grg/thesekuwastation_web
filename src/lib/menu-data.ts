@@ -34,13 +34,19 @@ export type MenuSection =
       rows: GridRow[];
     };
 
-/** Signature sekuwa, grilled to order, sold by weight. */
-export const sekuwaColumns = ["Meat", "Half Kg", "1 Kg"] as const;
-export const sekuwaPricing: { meat: string; half: string; full: string }[] = [
-  { meat: "Chicken", half: "600", full: "1100" },
-  { meat: "Buff", half: "600", full: "1100" },
-  { meat: "Mutton", half: "1000", full: "1800" },
-  { meat: "Pork", half: "700", full: "1300" },
+/** Signature sekuwa, grilled to order — by the skewer (jir) or by weight. */
+export const sekuwaColumns = ["Meat", "1 Jir", "Half Kg", "1 Kg"] as const;
+export const sekuwaPricing: {
+  meat: string;
+  jir: string;
+  half: string;
+  full: string;
+  fav?: boolean;
+}[] = [
+  { meat: "Chicken", jir: "80", half: "600", full: "1100", fav: true },
+  { meat: "Buff", jir: "80", half: "600", full: "1100" },
+  { meat: "Mutton", jir: "150", half: "1000", full: "1800", fav: true },
+  { meat: "Pork", jir: "90", half: "700", full: "1300" },
 ];
 
 /** The six "Most Loved · Chef's Signatures" for the highlight strip. */
@@ -112,7 +118,7 @@ export const menu: MenuSection[] = [
     kind: "grid",
     headers: ["Type", "Steam", "Fry", "Jhol", "Kothe", "C-Momo"],
     rows: [
-      { name: "Chicken", fav: true, cells: ["150", "170", "180", "210", "220"] },
+      { name: "Chicken", cells: ["150", "170", "180", "210", "220"] },
       { name: "Buff", cells: ["150", "170", "180", "210", "220"] },
     ],
   },
@@ -139,10 +145,27 @@ export const menu: MenuSection[] = [
     ],
   },
   {
+    id: "noodles-eggs",
+    title: "Noodles & Eggs",
+    kind: "list",
+    columns: 2,
+    items: [
+      { name: "Plain Omelet", price: "50" },
+      { name: "Masala Omelet", price: "80" },
+      { name: "Plain Maggie Noodle", price: "100" },
+      { name: "Egg Maggie Noodle", price: "150 / 180", note: "single / double" },
+      { name: "Sausage Egg Maggie Noodle", price: "230", note: "single" },
+      { name: "Plain Current Noodle", price: "100", fav: true },
+      { name: "Egg Current Noodle", price: "150 / 180", note: "single / double" },
+      { name: "Sausage Egg Current Noodle", price: "230", note: "single" },
+    ],
+  },
+  {
     id: "khaja-set",
     title: "Khaja Set",
     kind: "list",
     items: [
+      { name: "Chicken / Buff / Pork Sekuwa Khaja Set", price: "250" },
       { name: "Veg Khaja Set", price: "280" },
       { name: "Buff Khaja Set", price: "300" },
       { name: "Chicken Khaja Set", price: "300" },
@@ -169,8 +192,8 @@ export const menu: MenuSection[] = [
     items: [
       { name: "Plain Lassi", price: "120" },
       { name: "Special Lassi", price: "180" },
-      { name: "Virgin Mojito" },
-      { name: "Blue Lagoon" },
+      { name: "Virgin Mojito", price: "180" },
+      { name: "Blue Lagoon", price: "220" },
     ],
   },
   {
@@ -180,8 +203,8 @@ export const menu: MenuSection[] = [
     items: [
       { name: "Fanta / Coke / Dew", price: "100 / glass" },
       { name: "Xtreme", price: "200" },
-      { name: "Redbull Original (small)" },
-      { name: "Redbull Original (big)" },
+      { name: "Redbull Original (small)", price: "200" },
+      { name: "Redbull Original (big)", price: "300" },
       { name: "Water", price: "30 / bottle" },
     ],
   },
@@ -189,12 +212,11 @@ export const menu: MenuSection[] = [
     id: "alcohol",
     title: "Alcohol",
     kind: "list",
-    note: "All alcohol — MRP + 10%",
     items: [
-      { name: "Gorkha Beer", price: "MRP +10%" },
-      { name: "Tuborg Beer", price: "MRP +10%" },
-      { name: "Arna Beer (sano)", price: "MRP +10%" },
-      { name: "8848 Vodka", price: "MRP +10%" },
+      { name: "Gorkha Beer", price: "450" },
+      { name: "Tuborg Beer", price: "500" },
+      { name: "8848 Vodka", price: "2800" },
+      { name: "Old Durbar Whisky", price: "3500" },
     ],
   },
   {

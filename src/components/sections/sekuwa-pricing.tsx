@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Flame } from "lucide-react";
+import { Flame, Star } from "lucide-react";
 import { Section } from "@/components/brand/section";
 import { SectionHeading } from "@/components/brand/section-heading";
 import { BlurFade } from "@/components/ui/blur-fade";
@@ -62,6 +62,12 @@ export function SekuwaPricing() {
                     <tr key={row.meat} className="border-t border-line/40 first:border-t-0">
                       <td className="px-5 py-3.5 text-left font-sans text-lg font-medium tracking-wide text-cream">
                         {row.meat}
+                        {row.fav && (
+                          <Star className="ml-1.5 inline size-3 fill-ember text-ember" />
+                        )}
+                      </td>
+                      <td className="px-5 py-3.5 text-right font-sans text-lg font-light text-cream">
+                        {row.jir}
                       </td>
                       <td className="px-5 py-3.5 text-right font-sans text-lg font-light text-cream">
                         {row.half}
