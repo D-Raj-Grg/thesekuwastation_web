@@ -2,8 +2,6 @@
  * Single source of truth for contact + brand info.
  * EDIT HERE to update phone, hours, address everywhere on the site.
  *
- * TODO (from owner): confirm opening hours.
- * Google Maps profile is JS-gated so these could not be auto-filled.
  */
 
 const PHONE_DISPLAY = "+977 984-584-0157";
@@ -23,8 +21,8 @@ export const site = {
     "Namaste! I'd like to place an order at The Sekuwa Station.",
   )}`,
 
-  hours: [{ days: "Open daily", time: "9:00 AM – 10:00 PM" }],
-  hoursShort: "Open daily · 9 AM – 10 PM",
+  hours: [{ days: "Open daily", time: "12:00 PM – 10:00 PM" }],
+  hoursShort: "Open daily · 12 PM – 10 PM",
 
   address: "Near Omax Hall, Hetauda, Nepal",
   coords: { lat: 27.4225113, lng: 85.0317371 },
