@@ -213,8 +213,8 @@ export const menu: MenuSection[] = [
     title: "Alcohol",
     kind: "list",
     items: [
-      { name: "Gorkha Beer", price: "450" },
-      { name: "Tuborg Beer", price: "500" },
+      { name: "Gorkha Beer", price: "500" },
+      { name: "Tuborg Beer", price: "550" },
       { name: "8848 Vodka", price: "2800" },
       { name: "Old Durbar Whisky", price: "3500" },
     ],

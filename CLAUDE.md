@@ -14,7 +14,7 @@ conventions, and file structure may differ from training data. **Read the releva
 ## Project
 
 Marketing/web frontend for **The Sekuwa Station**, a Nepali sekuwa (grilled meat) restaurant
-(Kavre, Nepal). React 19 + App Router.
+(Hetauda, Nepal). React 19 + App Router.
 
 ## Commands
 

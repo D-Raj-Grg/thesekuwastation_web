@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     template: `%s — ${site.name}`,
   },
   description: `${site.tagline}. Charcoal-grilled sekuwa, chhoila, momo & more in ${site.address}.`,
-  keywords: ["sekuwa", "Nepali grill", "chhoila", "momo", "Kavre restaurant", site.name],
+  keywords: ["sekuwa", "Nepali grill", "chhoila", "momo", "Hetauda restaurant", site.name],
   openGraph: {
     title: `${site.name} — Charcoal Grilled Nepali Kitchen`,
     description: site.tagline,
