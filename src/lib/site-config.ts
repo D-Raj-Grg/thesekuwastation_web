@@ -2,12 +2,10 @@
  * Single source of truth for contact + brand info.
  * EDIT HERE to update phone, hours, address everywhere on the site.
  *
- * TODO (from owner): confirm real phone, WhatsApp, and opening hours.
- * Google Maps profile is JS-gated so these could not be auto-filled.
  */
 
-const PHONE_DISPLAY = "+977 98XX-XXXXXX"; // TODO: real number
-const PHONE_E164 = "+97798XXXXXXXX"; // TODO: real number, no spaces (for tel:/wa.me)
+const PHONE_DISPLAY = "+977 984-584-0157";
+const PHONE_E164 = "+9779845840157"; // no spaces (for tel:/wa.me)
 
 export const site = {
   name: "The Sekuwa Station",
@@ -23,10 +21,10 @@ export const site = {
     "Namaste! I'd like to place an order at The Sekuwa Station.",
   )}`,
 
-  hours: [{ days: "Open daily", time: "9:00 AM – 10:00 PM" }],
-  hoursShort: "Open daily · 9 AM – 10 PM",
+  hours: [{ days: "Open daily", time: "12:00 PM – 10:00 PM" }],
+  hoursShort: "Open daily · 12 PM – 10 PM",
 
-  address: "Kavrepalanchok, Nepal", // TODO: refine exact locality
+  address: "Near Omax Hall, Hetauda, Nepal",
   coords: { lat: 27.4225113, lng: 85.0317371 },
   mapsUrl: "https://maps.app.goo.gl/PBgba65kdYqWC1HH7",
   // directions deep-link to the exact pin

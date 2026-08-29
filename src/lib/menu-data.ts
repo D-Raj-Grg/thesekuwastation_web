@@ -43,10 +43,10 @@ export const sekuwaPricing: {
   full: string;
   fav?: boolean;
 }[] = [
-  { meat: "Chicken", jir: "80", half: "600", full: "1100", fav: true },
-  { meat: "Buff", jir: "80", half: "600", full: "1100" },
-  { meat: "Mutton", jir: "150", half: "1000", full: "1800", fav: true },
-  { meat: "Pork", jir: "90", half: "700", full: "1300" },
+  { meat: "Chicken", jir: "100", half: "600", full: "1100", fav: true },
+  { meat: "Buff", jir: "100", half: "600", full: "1100" },
+  { meat: "Mutton", jir: "180", half: "1000", full: "1800", fav: true },
+  { meat: "Pork", jir: "100", half: "700", full: "1300" },
 ];
 
 /** The six "Most Loved · Chef's Signatures" for the highlight strip. */
@@ -213,8 +213,8 @@ export const menu: MenuSection[] = [
     title: "Alcohol",
     kind: "list",
     items: [
-      { name: "Gorkha Beer", price: "450" },
-      { name: "Tuborg Beer", price: "500" },
+      { name: "Gorkha Beer", price: "500" },
+      { name: "Tuborg Beer", price: "550" },
       { name: "8848 Vodka", price: "2800" },
       { name: "Old Durbar Whisky", price: "3500" },
     ],

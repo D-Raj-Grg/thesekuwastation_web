@@ -52,7 +52,7 @@ export function Footer() {
         </div>
 
         <div className="mt-2 flex flex-col items-center gap-1 font-sans text-[11px] uppercase tracking-[0.15em] text-ash">
-          <span>© {site.name} · Kavre, Nepal</span>
+          <span>© {site.name} · Hetauda, Nepal</span>
           <span>Prices in {site.currency} · Subject to change</span>
         </div>
       </div>
