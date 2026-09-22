@@ -6,6 +6,7 @@
 
 const PHONE_DISPLAY = "+977 984-584-0157";
 const PHONE_E164 = "+9779845840157"; // no spaces (for tel:/wa.me)
+const EMAIL = "thesekuwastation@gmail.com";
 
 export const site = {
   name: "The Sekuwa Station",
@@ -20,6 +21,9 @@ export const site = {
   whatsappHref: `https://wa.me/${PHONE_E164.replace("+", "")}?text=${encodeURIComponent(
     "Namaste! I'd like to place an order at The Sekuwa Station.",
   )}`,
+
+  email: EMAIL,
+  emailHref: `mailto:${EMAIL}`,
 
   hours: [{ days: "Open daily", time: "12:00 PM – 10:00 PM" }],
   hoursShort: "Open daily · 12 PM – 10 PM",
