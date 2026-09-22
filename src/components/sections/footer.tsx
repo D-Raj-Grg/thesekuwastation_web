@@ -1,4 +1,4 @@
-import { Phone, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
 import { Wordmark } from "@/components/brand/wordmark";
 import { site } from "@/lib/site-config";
 
@@ -32,6 +32,9 @@ export function Footer() {
         <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 font-sans text-sm font-light text-cream-dim">
           <a href={site.phoneHref} className="inline-flex items-center gap-2 transition-colors hover:text-gold">
             <Phone className="size-4" /> {site.phoneDisplay}
+          </a>
+          <a href={site.emailHref} className="inline-flex items-center gap-2 transition-colors hover:text-gold">
+            <Mail className="size-4" /> {site.email}
           </a>
           <a href={site.directionsUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 transition-colors hover:text-gold">
             <MapPin className="size-4" /> {site.address}

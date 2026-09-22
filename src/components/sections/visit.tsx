@@ -1,4 +1,4 @@
-import { Phone, MapPin, Clock, MessageCircle, Truck } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, MessageCircle, Truck } from "lucide-react";
 import { Section } from "@/components/brand/section";
 import { SectionHeading } from "@/components/brand/section-heading";
 import { BlurFade } from "@/components/ui/blur-fade";
@@ -33,6 +33,9 @@ export function Visit() {
             </InfoRow>
             <InfoRow icon={<Phone className="size-5 text-ember" />} label="Call">
               <a href={site.phoneHref} className="transition-colors hover:text-gold">{site.phoneDisplay}</a>
+            </InfoRow>
+            <InfoRow icon={<Mail className="size-5 text-ember" />} label="Email">
+              <a href={site.emailHref} className="transition-colors hover:text-gold">{site.email}</a>
             </InfoRow>
 
             <div className="mt-auto grid grid-cols-1 gap-3 pt-4 sm:grid-cols-3">
